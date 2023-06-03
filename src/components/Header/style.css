@@ -1,0 +1,46 @@
+header {
+  background-color: #dbc7c9;
+  padding: 0.5rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand__logo {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(img/icon.svg);
+  background-size: contain;
+}
+
+.brand__name {
+  margin-left: 0.5rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+a.navlink {
+  text-decoration: none;
+}
+
+a.navlink:hover {
+  border-bottom: 1px solid #333;
+}
+
+a.navlink--active {
+  border-bottom: 1px solid #333;
+  font-weight: 900;
+}

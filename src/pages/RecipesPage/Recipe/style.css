@@ -1,0 +1,22 @@
+.recipe {
+    width: 350px;
+    height: 300px;
+}
+
+.recipe__title {
+    text-align: center;
+}
+
+.recipe__link {
+    color: #b97d78;
+    text-decoration: none;
+}
+
+.recipe__link:hover {
+    color: #b97d78;
+    text-decoration: underline;
+}
+
+.recipe__img {
+    width: 100%;
+}
