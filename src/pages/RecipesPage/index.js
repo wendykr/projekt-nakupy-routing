@@ -15,12 +15,12 @@ export const RecipesPage = (props) => {
   const element = document.createElement('div');
   element.classList.add('page');
   element.append(Header());
-  element.innerHTML += `
+  element.insertAdjacentHTML("beforeend", `
     <main class="container">
       <h1>Recepty</h1>
       <div class="recipes">${process}</div>
     </main>
-  `;
+  `);
 
   if (recipes === 'loading') {
     fetch('https://nakupy.kodim.app/api/me/recipes', {

@@ -31,12 +31,11 @@ export const Header = () => {
   console.log(brandElm);
 
   brandElm.addEventListener('click', () => {
-    console.log('click');
-    location.href = '/';
+    window.location.href = 'home';
+    // location.href = 'home';
   });
 
   brandElm.addEventListener('mouseover', () => {
-    console.log('mouseover');
     brandElm.style.cursor = 'pointer';
   });
 

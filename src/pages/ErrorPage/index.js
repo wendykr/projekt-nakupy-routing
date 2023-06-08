@@ -8,7 +8,7 @@ export const ErrorPage = () => {
   const element = document.createElement('div');
   element.classList.add('page');
   element.append(Header());
-  element.innerHTML += `
+  element.insertAdjacentHTML("beforeend", `
     <main class="container flex-align">
       <div class="notfound">
         <div class="notfound-404"></div>
@@ -18,7 +18,7 @@ export const ErrorPage = () => {
         <a href="home">Back to homepage</a>
       </div>
     </main>
-  `;
+  `);
 
   element.append(Footer());
   return element;

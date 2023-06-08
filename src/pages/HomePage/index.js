@@ -6,9 +6,9 @@ export const HomePage = () => {
   const element = document.createElement('div');
   element.classList.add('page');
   element.append(Header());
-  element.innerHTML += `
+  element.insertAdjacentHTML("beforeend", `
     <main class="container"></main>
-  `;
+  `);
   element.append(Footer());
 
   element.querySelector('main').append(
